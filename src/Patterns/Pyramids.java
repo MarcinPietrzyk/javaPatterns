@@ -19,6 +19,19 @@ public class Pyramids {
             }
             System.out.print("\n");
         }
+
+        System.out.println("3rd pattern");
+
+        for(int row = 0; row<5; row++){
+            for(int column = 0; column < row; column++){
+                System.out.printf(" ");
+            }
+            for(int column2 = row; column2 < 5; column2++){
+                System.out.printf("*");
+            }
+            System.out.printf("\n");
+        }
+
     }
 
 }
