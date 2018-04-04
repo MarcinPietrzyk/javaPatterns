@@ -43,7 +43,7 @@ public class Pyramids {
             System.out.printf("\n");
         }
 
-        System.out.println("5th pattern - Half Diamond");
+        System.out.println("5th pattern - Half Diamond-right side");
         for(int row = 1; row<=5; row++){
             for(int column = 1; column<=row;column++){
                 System.out.printf("*"+" ");
@@ -53,6 +53,32 @@ public class Pyramids {
         for(int row = 1; row<=4; row++){
             for(int column = 4;column>=row;column--){
                 System.out.printf("* ");
+            }
+            System.out.println("");
+        }
+
+        System.out.println("6th pattern - Half Diamond");
+        for(int row = 1; row <=5; row++){
+            for(int emptyColumn = 5; emptyColumn>=row;emptyColumn--){
+                System.out.print(" ");
+            }
+            for(int starA = 1; starA<=row;starA++){
+                System.out.printf("*");
+            }
+            for(int starB = 2; starB<=row;starB++){
+                System.out.printf("*");
+            }
+            System.out.println("");
+        }
+        for(int row =1; row<=5;row++){
+            for(int emptyColumn = 1; emptyColumn<=row;emptyColumn++){
+                System.out.printf(" ");
+            }
+            for(int starA = 5; starA>=row;starA--){
+                System.out.printf("*");
+            }
+            for(int starB = 4; starB>=row;starB--){
+                System.out.printf("*");
             }
             System.out.println("");
         }
